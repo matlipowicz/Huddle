@@ -1,0 +1,19 @@
+@keyframes text-slide {
+    0% {
+        transform: translateX(-150rem);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes logo-slide {
+    0% {
+        transform: translateY(-50rem);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}

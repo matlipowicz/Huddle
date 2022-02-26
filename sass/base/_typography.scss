@@ -1,0 +1,77 @@
+@use "../abstracts/" as *;
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+
+    @include huddle(mobile-land) {
+        font-size: 1.6rem;
+    }
+}
+
+.heading-1,
+.heading-2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+.heading-1 {
+    font-size: 2.8rem;
+    margin-bottom: 2.5rem;
+
+    width: 100%;
+
+    @include huddle(mobile-land) {
+        font-size: 3.2rem;
+    }
+
+    @include huddle(tab-land) {
+        font-size: 4rem;
+    }
+}
+.heading-2 {
+    font-size: 2.5rem;
+    margin: 6rem 0 1rem 0;
+
+    @include huddle(mobile-land) {
+        font-size: 2.9rem;
+    }
+
+    @include huddle(tab-land) {
+        font-size: 3.2rem;
+    }
+
+    &--white {
+        @include huddle(mobile-land) {
+            margin: 0 0 2rem 0;
+        }
+    }
+}
+
+.paragraph {
+    text-align: center;
+    line-height: 2.2rem;
+    &--white {
+        color: var(--color-white);
+        text-align: left;
+    }
+}
+
+.section-rate {
+    &__score {
+        &:not(:last-child) {
+            margin-bottom: 10rem;
+        }
+        &--number {
+            font-size: 6rem;
+            font-weight: var(--fw-b);
+        }
+
+        &--text {
+            align-self: center;
+            color: var(--color-gray);
+        }
+    }
+}

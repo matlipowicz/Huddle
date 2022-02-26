@@ -1,0 +1,26 @@
+:root {
+    // COLORS
+    --color-primary-pink: rgb(255, 82, 191);
+    --color-primary-lpink: hsl(321, 100%, 78%);
+    --color-primary-red: hsl(0, 100%, 63%);
+    --color-white: hsl(207, 100%, 98%);
+    --color-dcyan: hsl(192, 100%, 9%);
+    --color-gray: hsl(0, 0%, 62%);
+    --color-background-lb: hsl(198, 100%, 97%);
+
+    // FONT-FAMILY
+
+    --heading-ff: "Poppins", sans-serif;
+    --body-ff: "Open Sans", sans-serif;
+
+    // FONT-WEIGHT
+
+    --fw-b: 700;
+    --fw-m: 600;
+    --fw-l: 400;
+}
+
+// !BREAKPOINTS - do zmiany
+
+$mobile-breakpoint: 37.5em; // 600px/16 = 37.5--> 1em = 16px
+$desktop-breakpoint: 90em; // 1440px/16 = 90--> 1em = 16px

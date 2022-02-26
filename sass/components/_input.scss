@@ -1,0 +1,13 @@
+.footer {
+    &__input {
+        padding: 1rem 1rem;
+        border-radius: 0.5rem;
+        border: none;
+        width: 100%;
+        max-width: 35rem;
+
+        font-size: 1.6rem;
+        font-weight: var(--fw-m);
+        font-family: "Open-sans", sans-serif;
+    }
+}

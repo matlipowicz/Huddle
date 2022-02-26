@@ -1,0 +1,47 @@
+// SVG COLOR MIXIN
+
+@mixin mask-svg {
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask-position: center;
+}
+
+// *MEDIA QUERY MANAGER
+
+/*
+
+mobile-land = 580px --> 36.25em --> phone
+tab-hor = 800px --> 50em --> tablet portrait
+tab-land = 1000px --> 62.5em --> tablet landscape
+desktop = 1200px --> 75em --> desktop
+big-desktop = 580px --> 36.25em --> bigger desktop
+*/
+
+@mixin huddle($breakpoint) {
+    @if $breakpoint == mobile-land {
+        @media only screen and (min-width: 36.25em) {
+            @content;
+        }
+    }
+
+    @if $breakpoint == tab-hor {
+        @media only screen and (min-width: 50em) {
+            @content;
+        }
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (min-width: 62.5em) {
+            @content;
+        }
+    }
+
+    @if $breakpoint == desktop {
+        @media only screen and (min-width: 75em) {
+            @content;
+        }
+    }
+}
